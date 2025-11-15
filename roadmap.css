@@ -1,0 +1,136 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+code {
+    background: #eee;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    line-height: 1.4;
+    border: 1px solid #ddd;
+}
+
+blockquote {
+    border-left: 4px solid #ddd;
+    margin: 1em 0;
+    padding-left: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+.code-container {
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    margin: 1em 0;
+    position: relative;
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: #e8eaed;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.code-label {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3c4043;
+}
+
+.code-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.toggle, .copy-button {
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    margin-left: 12px;
+    color: #5f6368;
+}
+
+.copy-button {
+    font-size: 16px;
+}
+
+.code-content {
+    display: none;
+    padding: 16px;
+    overflow-x: auto;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.code-content.show {
+    display: block;
+}
