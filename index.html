@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen">
+        <h1>IRIS To-Do</h1>
+        <p>Sign in to continue</p>
+        <div id="g_id_onload"
+             data-client_id="365261864816-b13ggo47m19kr8eeo7rup2v46mrm0gck.apps.googleusercontent.com"
+             data-callback="handleCredentialResponse">
+        </div>
+        <div class="g_id_signin"
+             data-type="standard"
+             data-shape="rectangular"
+             data-theme="outline"
+             data-text="signin_with"
+             data-size="large"
+             data-logo_alignment="left">
+        </div>
+    </div>
+
+    <div id="todo-screen" style="display: none;">
+        <div class="header">
+            <h1>IRIS To-Do</h1>
+            <div id="user-info">
+                <span id="username"></span>
+                <button id="logout-button">Logout</button>
+            </div>
+        </div>
+        <div class="todo-container">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-todo">Add</button>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="bundle.js"></script>
+</body>
+</html>
